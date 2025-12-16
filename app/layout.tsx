@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Outfit, Space_Grotesk } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { LanguageProvider } from "@/contexts/language-context"
 
 const outfit = Outfit({ subsets: ["latin"] })
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] })
@@ -39,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className={`font-sans antialiased`}>
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
         <Analytics />
       </body>
     </html>

@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image"
+import { useLanguage } from "@/contexts/language-context"
 
 const ambianceImages = [
   {
@@ -16,15 +19,15 @@ const ambianceImages = [
 ]
 
 export function AmbianceGallery() {
+  const { t } = useLanguage()
+
   return (
     <section className="py-20 bg-[#FAF7F2]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">AMBIENTE & ERLEBNIS</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">{t.ambiance.title}</h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto text-pretty leading-relaxed">
-            Lin&apos;s Kitchen ist ein warmer, entspannter Ort, um frische asiatische Küche zu genießen. Der Raum ist
-            einfach, sauber und komfortabel, damit Sie sich entspannen können, während Ihre Mahlzeit frisch zubereitet
-            wird.
+            {t.ambiance.description}
           </p>
         </div>
 

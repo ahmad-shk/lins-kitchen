@@ -1,12 +1,10 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { useLanguage } from "@/contexts/language-context"
 
-const categories = [
-  { icon: "🥐", label: "FRÜHSTÜCK" },
-  { icon: "🍽️", label: "MITTAGESSEN" },
-  { icon: "🍜", label: "ABENDESSEN" },
-  { icon: "🍰", label: "DESSERT" },
-]
+const categoryIcons = ["🥐", "🍽️", "🍜", "🍰"]
 
 const foodImages = [
   {
@@ -28,27 +26,26 @@ const foodImages = [
 ]
 
 export function FoodCategories() {
+  const { t } = useLanguage()
+
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <Button variant="outline" className="mb-6 rounded-full bg-transparent">
-            Menü
+            {t.categories.badge}
           </Button>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">WÄHLEN SIE IHR LIEBLINGSGERICHT</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">
-            Frische asiatische Gerichte auf Bestellung zubereitet. Schnell, geschmackvoll und mit einfachen, ehrlichen
-            Zutaten zubereitet.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">{t.categories.title}</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">{t.categories.subtitle}</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-8">
-          {categories.map((item) => (
+          {t.categories.items.map((item, index) => (
             <div
               key={item.label}
               className="bg-[#0A1929] text-white p-8 rounded-xl hover:bg-[#1a2f45] transition-colors cursor-pointer"
             >
-              <div className="text-5xl mb-4 text-center">{item.icon}</div>
+              <div className="text-5xl mb-4 text-center">{categoryIcons[index]}</div>
               <h3 className="font-bold text-center text-lg tracking-wide">{item.label}</h3>
             </div>
           ))}
@@ -56,7 +53,7 @@ export function FoodCategories() {
 
         <div className="text-center">
           <Button size="lg" className="bg-[#0A1929] hover:bg-[#1a2f45] text-white">
-            Menü ansehen
+            {t.categories.cta}
           </Button>
         </div>
 

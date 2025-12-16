@@ -1,7 +1,12 @@
+"use client"
+
 import Image from "next/image"
 import { Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react"
+import { useLanguage } from "@/contexts/language-context"
 
 export function Footer() {
+  const { t } = useLanguage()
+
   return (
     <footer className="bg-[#0A1929] text-white py-12 border-t border-gray-800">
       <div className="container mx-auto px-4">
@@ -16,13 +21,13 @@ export function Footer() {
               />
             </div>
             <div>
-              <p className="text-sm text-gray-400 mb-1">INHABER</p>
+              <p className="text-sm text-gray-400 mb-1">{t.footer.owner}</p>
               <p className="font-bold">Lin Zainiger</p>
             </div>
           </div>
 
           <div>
-            <p className="text-sm text-gray-400 mb-3">KONTAKT</p>
+            <p className="text-sm text-gray-400 mb-3">{t.footer.contact}</p>
             <div className="space-y-2">
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
@@ -36,7 +41,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-sm text-gray-400 mb-3">FOLGEN</p>
+            <p className="text-sm text-gray-400 mb-3">{t.footer.follow}</p>
             <div className="flex gap-4 mb-6">
               <a
                 href="#"
@@ -57,8 +62,8 @@ export function Footer() {
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-sm text-gray-400 mb-2">ZAHLUNG AKZEPTIERT</p>
-            <p className="text-sm">Bargeld, Karte willkommen</p>
+            <p className="text-sm text-gray-400 mb-2">{t.footer.payment}</p>
+            <p className="text-sm">{t.footer.paymentMethods}</p>
           </div>
         </div>
       </div>
