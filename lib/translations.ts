@@ -58,6 +58,7 @@ export const translations = {
     footer: {
       owner: "OWNER",
       contact: "CONTACT",
+      email: "EMAIL",
       follow: "FOLLOW",
       payment: "PAYMENT ACCEPT",
       paymentMethods: "Cash, Card welcome",
@@ -122,6 +123,7 @@ export const translations = {
     footer: {
       owner: "INHABER",
       contact: "KONTAKT",
+      email: "E-Mail",
       follow: "FOLGEN",
       payment: "ZAHLUNG AKZEPTIERT",
       paymentMethods: "Bargeld, Karte willkommen",

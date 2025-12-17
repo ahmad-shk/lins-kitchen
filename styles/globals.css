@@ -3,6 +3,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+    font-family: 'shuriken';
+    src: url('../fonts/shurike/TheLastShuriken-Regular.woff2') format('woff2'),
+        url('../fonts/shurike/TheLastShuriken-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -37,6 +46,10 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+}
+
+@theme {
+  --font-heading: "shuriken", sans-serif;
 }
 
 .dark {
@@ -75,6 +88,7 @@
 }
 
 @theme inline {
+  --font-heading: "shuriken", sans-serif;
   --font-sans: 'Geist', 'Geist Fallback';
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);

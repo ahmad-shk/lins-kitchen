@@ -3,6 +3,46 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+    font-family: 'shuriken';
+    src: url('/fonts/shurike/TheLastShuriken-Regular.woff2') format('woff2'),
+        url('/fonts/shurike/TheLastShuriken-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'blauer-bold';
+    src: url('/fonts/BlauerNue/BlauerNue-SemiBold.woff2') format('woff2'),
+        url('/fonts/BlauerNue/BlauerNue-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'blauer-light';
+    src: url('/fonts/BlauerNue/BlauerNue-Light.woff2') format('woff2'),
+        url('/fonts/BlauerNue/BlauerNue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'blauer-regular';
+    src: url('/fonts/BlauerNue/BlauerNue-Regular.woff2') format('woff2'),
+        url('/fonts/BlauerNue/BlauerNue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+
 :root {
   --background: oklch(0.98 0.005 85);
   --foreground: oklch(0.15 0.02 260);
@@ -75,8 +115,14 @@
 }
 
 @theme inline {
-  --font-sans: "Outfit", "Outfit Fallback";
-  --font-mono: "Space Grotesk", "Space Grotesk Fallback";
+  --font-heading: "shuriken", sans-serif;
+  --font-body: "blauer-regular", sans-serif;
+
+  --font-blauerBold: "blauer-bold", sans-serif;
+  --font-blauerLight: "blauer-light", sans-serif;
+
+  /* --font-sans: "Outfit", "Outfit Fallback";
+  --font-mono: "Space Grotesk", "Space Grotesk Fallback"; */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -113,6 +159,12 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+
+  --color-navyBlue: #0F1C2A;
+
+  --color-secondary: #F5E3BF;
+  --color-btnSecondary: #F7EACA;
 }
 
 @layer base {
@@ -123,3 +175,40 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+
+body {
+  @apply font-body font-normal;
+}
+
+.container-sm {
+  max-width: 994px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.offers-bg {
+  background: #0F1C2A url(/images/home-page/offers-bg.png) center center;
+}
+
+.ambience-bg {
+  background: url(/images/home-page/ambience-bg.png) center center;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.mySwiper .swiper-slide {
+  width: 150px; height: auto; max-height: 348px; overflow: hidden; border-radius: 12px; transition: width 0.3s ease-in-out;
+}
+.mySwiper .swiper-slide img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.mySwiper .swiper-slide-active {
+  width: 650px;
+}
+

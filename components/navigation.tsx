@@ -3,31 +3,28 @@
 import { Button } from "@/components/ui/button"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useLanguage } from "@/contexts/language-context"
+import Image from "next/image"
 
 export function Navigation() {
   const { t } = useLanguage()
 
   return (
-    <nav className="bg-[#0A1929] text-white py-4 px-4 border-b border-gray-800">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav className="bg-navyBlue text-white py-7 px-4">
+      <div className="container-sm flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="text-2xl">🏮</div>
-          <div>
-            <h1 className="font-bold text-xl tracking-wide">LIN&apos;S KITCHEN</h1>
-            <p className="text-xs text-gray-400 tracking-widest">ASIAN CUISINE</p>
-          </div>
+          <Image src="images/home-page/logo.svg" width={234} height={40} alt="logo" />
         </div>
         <div className="flex items-center gap-6">
-          <a href="#" className="hover:text-gray-300 transition-colors">
+          <a href="#" className="hover:text-gray-300 transition-colors text-xl">
             {t.nav.home}
           </a>
-          <a href="#menu" className="hover:text-gray-300 transition-colors">
+          <a href="#menu" className="hover:text-gray-300 transition-colors text-xl">
             {t.nav.menu}
           </a>
           <Button
             variant="outline"
             size="sm"
-            className="rounded-full border-white hover:bg-white hover:text-[#0A1929] bg-transparent"
+            className="rounded-full text-navyBlue border-navyBlue bg-white hover:border-white hover:bg-transparent hover:text-white text-base cursor-pointer px-5" 
           >
             {t.nav.contact}
           </Button>
