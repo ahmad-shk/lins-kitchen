@@ -10,7 +10,7 @@ export function VisitInfo() {
     <div className="bg-navyBlue text-white py-6">
       <div className="py-8 border-y-8 border-btnSecondary">
         <div className="container-sm mx-auto px-4">
-          <h1 className="font-heading text-4xl md:text-6xl text-center mb-3">{t.visit.title}</h1>
+          <h1 className="font-heading md:text-4xl text-2xl lg:text-6xl text-center mb-3">{t.visit.title}</h1>
           <p className="text-xl md:text-2xl text-center text-gray-300 mb-11">{t.visit.subtitle}</p>
 
           <div className="grid md:grid-cols-2 gap-8 mx-auto">

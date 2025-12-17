@@ -63,7 +63,7 @@ const ambianceImages = [
 
 export function AmbianceGallery() {
   const { t } = useLanguage()
-  
+
   const prevRef = useRef(null)
   const nextRef = useRef(null)
   const [initSwiper, setInitSwiper] = useState(false)
@@ -74,7 +74,7 @@ export function AmbianceGallery() {
   }, [])
 
   return (
-    <section className="py-20 ambience-bg">
+    <section className="md:py-20 py-15 ambience-bg">
       <div className="container-sm mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading text-navyBlue text-4xl md:text-6xl mb-6 text-balance">{t.ambiance.title}</h2>

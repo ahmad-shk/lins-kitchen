@@ -11,8 +11,8 @@ export function Footer() {
     <>
     <footer className="bg-[#F3F3F4] text-white py-8">
       <div className="container-sm mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12">
-          <div className="">
+        <div className="md:grid flex flex-wrap md:grid-cols-3 md:gap-12">
+          <div className="w-6/12">
             <div className="w-20 h-20 relative rounded-sm overflow-hidden bg-gray-700 mb-3">
               <Image
                 src="/professional-asian-restaurant-owner-portrait.jpg"
@@ -27,7 +27,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 w-6/12">
             <div>
               <p className="font-blauerBold text-[15px] text-navyBlue ">{t.footer.contact}</p>
               <p className="text-navyBlue text-xs">
@@ -41,9 +41,9 @@ export function Footer() {
               </p>
             </div>
           </div>
-          <div>
-            <p className="font-blauerBold text-[15px] text-navyBlue text-end mb-1">{t.footer.follow}</p>
-            <div className="flex justify-end gap-2 mb-6">
+          <div className="w-full">
+            <p className="font-blauerBold text-[15px] text-navyBlue md:text-end mb-1">{t.footer.follow}</p>
+            <div className="flex md:justify-end gap-2 md:mb-6 mb-4 md:mt-0 mt-4">
               <a
                 href="#"
                 className="w-7 h-7 rounded-full bg-navyBlue hover:bg-gray-700 flex items-center justify-center transition-colors"
@@ -72,8 +72,8 @@ export function Footer() {
 
               </a>
             </div>
-            <p className="font-blauerBold text-[15px] text-navyBlue text-end mb-1">{t.footer.payment}</p>
-            <p className="text-xs text-navyBlue text-end">{t.footer.paymentMethods}</p>
+            <p className="font-blauerBold text-[15px] text-navyBlue md:text-end mb-1">{t.footer.payment}</p>
+            <p className="text-xs text-navyBlue md:text-end">{t.footer.paymentMethods}</p>
           </div>
         </div>
       </div>

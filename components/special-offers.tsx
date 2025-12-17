@@ -10,13 +10,13 @@ export function SpecialOffers() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20 offers-bg text-white">
+    <section className="md:py-20 py-15 offers-bg text-white">
       <div className="container-sm mx-auto px-4">
         <div className="text-center mb-5 max-w-187.5 mx-auto">
           <Badge className="border-[.5px] border-btnSecondary text-navyBlue rounded-full bg-btnSecondary text-lg md:text-xl px-6 py-1 font-normal mb-6">
             {t.offers.badge}
           </Badge>
-          <h2 className="font-heading text-4xl md:text-6xl ">{t.offers.title}</h2>
+          <h2 className="font-heading md:text-4xl text-2xl lg:text-6xl ">{t.offers.title}</h2>
         </div>
 
         <div className="space-y-4 mx-auto">

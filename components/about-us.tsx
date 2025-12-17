@@ -7,7 +7,7 @@ export function AboutUs() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20 bg-white relative">
+    <section className="md:py-20 py-15 bg-white relative">
 
       <span className="absolute left-16 top-20 max-md:hidden">
         <svg width="110" height="108" className="w-full h-full" viewBox="0 0 110 108" fill="none" xmlns="http://www.w3.org/2000/svg">
