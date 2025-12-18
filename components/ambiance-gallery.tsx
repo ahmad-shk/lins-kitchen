@@ -104,7 +104,7 @@ export function AmbianceGallery() {
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
-          }}s
+          }}
           breakpoints={{
             320: {
               slidesPerView: 1.2,
