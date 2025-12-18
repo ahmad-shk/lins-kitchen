@@ -13,7 +13,7 @@ export function SpecialOffers() {
     <section className="md:py-20 py-15 offers-bg text-white">
       <div className="container-sm mx-auto px-4">
         <div className="text-center mb-5 max-w-187.5 mx-auto">
-          <Badge className="border-[.5px] border-btnSecondary text-navyBlue rounded-full bg-btnSecondary text-lg md:text-xl px-6 py-1 font-normal mb-6">
+          <Badge className="border-[.5px] border-btnSecondary text-navyBlue rounded-full bg-btnSecondary text-base md:text-xl px-6 py-1 font-normal mb-6">
             {t.offers.badge}
           </Badge>
           <h2 className="font-heading md:text-4xl text-2xl lg:text-6xl ">{t.offers.title}</h2>
@@ -27,9 +27,9 @@ export function SpecialOffers() {
             >
               <div className="flex-1">
                 <div className="md:max-w-110.75">
-                  <h3 className="text-[26px] font-blauerBold text-navyBlue mb-2 leading-none">{item.title}</h3>
+                  <h3 className="text-xl md:text-[26px] font-blauerBold text-navyBlue mb-2 leading-none">{item.title}</h3>
                   <p className="text-navyBlue font-light mb-5 md:mb-9 text-base leading-snug">{item.description}</p>
-                  <p className="text-2xl font-blauerBold text-navyBlue">{item.price}</p>
+                  <p className="text-lg md:text-2xl font-blauerBold text-navyBlue">{item.price}</p>
                 </div>
               </div>
               <div className="w-full md:w-93.75 h-48 relative rounded-sm overflow-hidden shrink-0">

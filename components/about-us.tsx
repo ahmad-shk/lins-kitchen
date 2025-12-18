@@ -40,10 +40,10 @@ export function AboutUs() {
 
       <div className="container-sm mx-auto px-4">
         <div className="text-center max-w-225 mx-auto">
-          <Badge className="border-[.5px] border-navyBlue text-navyBlue rounded-full bg-transparent text-lg md:text-xl px-6 py-1 font-normal mb-6">
+          <Badge className="border-[.5px] border-navyBlue text-navyBlue rounded-full bg-transparent text-base md:text-xl px-6 py-1 font-normal mb-6">
             {t.about.badge}
           </Badge>
-          <p className="text-xl md:text-4xl text-black text-pretty">{t.about.description}</p>
+          <p className="text-base leading-snug md:text-2xl lg:text-4xl text-black text-pretty">{t.about.description}</p>
         </div>
       </div>
     </section>
