@@ -66,6 +66,21 @@ export function AmbianceGallery() {
 
   const prevRef = useRef(null)
   const nextRef = useRef(null)
+
+  const swiperRef = useRef(null)
+
+  useEffect(() => {
+    if (
+      swiperRef.current &&
+      prevRef.current &&
+      nextRef.current
+    ) {
+      swiperRef.current.params.navigation.prevEl = prevRef.current
+      swiperRef.current.params.navigation.nextEl = nextRef.current
+      swiperRef.current.navigation.init()
+      swiperRef.current.navigation.update()
+    }
+  }, [])
   
   return (
     <section className="md:py-20 py-15 ambience-bg">
@@ -79,22 +94,17 @@ export function AmbianceGallery() {
       </div>
       <div className="w-full mx-auto ambiance-swiper relative">
         <Swiper
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper
+          }}
           centeredSlides
           spaceBetween={24}
           loop
           modules={[Navigation]}
           navigation={{
-    prevEl: prevRef.current,
-    nextEl: nextRef.current,
-  }}
-  onBeforeInit={(swiper) => {
-    // @ts-ignore
-    swiper.params.navigation.prevEl = prevRef.current;
-    // @ts-ignore
-    swiper.params.navigation.nextEl = nextRef.current;
-    swiper.navigation.init();
-    swiper.navigation.update();
-  }}
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
           breakpoints={{
             320: {
               slidesPerView: 1.2,
