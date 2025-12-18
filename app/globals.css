@@ -226,9 +226,17 @@ body {
 .ambiance-swiper .arrow {position: absolute; left: 20px; top: 50%; transform: translateY(-50%); z-index: 3;}
 .ambiance-swiper .arrow.slick-arrow-next {left: auto; right: 20px;}
 
-/* .ambiance-slide:not(.swiper-slide-active) {
-  width: 12% !important;
+@media screen and (max-width: 768px) {
+  .ambiance-swiper::before {
+    width: 70px;
+    background: linear-gradient(90deg, rgba(253, 242, 242, 0) 0%, #f3f3f4 60%);
+  }
+
+  .ambiance-swiper::after {
+    width: 70px;
+    background: linear-gradient(90deg, rgba(253, 242, 242, 0) 0%, #f3f3f4 60%);
+  }
+
+  .ambiance-swiper .arrow {left: 15px;}
+  .ambiance-swiper .arrow.slick-arrow-next {right: 15px;}
 }
-.swiper-slide-active.ambiance-slide {
-    width: 50% !important;
-} */

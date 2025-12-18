@@ -66,34 +66,49 @@ export function AmbianceGallery() {
 
   const prevRef = useRef(null)
   const nextRef = useRef(null)
-  const [initSwiper, setInitSwiper] = useState(false)
-
-  // Swiper only renders after refs are attached
-  useEffect(() => {
-    setInitSwiper(true)
-  }, [])
-
+  
   return (
     <section className="md:py-20 py-15 ambience-bg">
       <div className="container-sm mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-navyBlue text-4xl md:text-6xl mb-6 text-balance">{t.ambiance.title}</h2>
-          <p className="text-lg md:text-2xl text-black max-w-3xl mx-auto text-pretty leading-relaxed">
+          <h2 className="font-heading text-navyBlue md:text-4xl text-2xl lg:text-6xl mb-6 text-balance">{t.ambiance.title}</h2>
+          <p className="text-base md:text-xl lg:text-2xl  text-black max-w-3xl mx-auto text-pretty leading-snug">
             {t.ambiance.description}
           </p>
         </div>
       </div>
       <div className="w-full mx-auto ambiance-swiper relative">
         <Swiper
-          slidesPerView={4}
-          centeredSlides={true}
+          centeredSlides
           spaceBetween={24}
-          loop={true}
+          loop
           modules={[Navigation]}
-          navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
-          onBeforeInit={(swiper) => {
-            swiper.params.navigation.prevEl = prevRef.current
-            swiper.params.navigation.nextEl = nextRef.current
+          navigation={{
+    prevEl: prevRef.current,
+    nextEl: nextRef.current,
+  }}
+  onBeforeInit={(swiper) => {
+    // @ts-ignore
+    swiper.params.navigation.prevEl = prevRef.current;
+    // @ts-ignore
+    swiper.params.navigation.nextEl = nextRef.current;
+    swiper.navigation.init();
+    swiper.navigation.update();
+  }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1.2,
+              spaceBetween: 16,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+            1280: {
+              slidesPerView: 4,
+            },
           }}
         >
           {ambianceImages.map((image, index) => (

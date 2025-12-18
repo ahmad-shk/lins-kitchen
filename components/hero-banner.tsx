@@ -18,7 +18,7 @@ export function HeroBanner() {
         <p className="text-lg md:text-2xl mb-8 max-w-3xl text-pretty drop-shadow-lg font-normal">{t.hero.subtitle}</p>
         <Button
           size="lg"
-          className="bg-btnSecondary text-navyBlue hover:text-white cursor-pointer text-lg md:text-xl px-10 py-6 rounded-full shadow-xl"
+          className="bg-btnSecondary text-navyBlue hover:text-white cursor-pointer text-base md:text-xl px-8 md:px-10 py-4 md:py-6 rounded-full shadow-xl"
         >
           {t.hero.cta}
         </Button>

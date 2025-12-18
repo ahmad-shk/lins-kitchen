@@ -11,9 +11,9 @@ export function Footer() {
     <>
     <footer className="bg-[#F3F3F4] text-white py-8">
       <div className="container-sm mx-auto px-4">
-        <div className="md:grid flex flex-wrap md:grid-cols-3 md:gap-12">
-          <div className="w-6/12">
-            <div className="w-20 h-20 relative rounded-sm overflow-hidden bg-gray-700 mb-3">
+        <div className="md:grid flex flex-wrap md:grid-cols-3 md:gap-12 space-y-2 md:space-y-0">
+          <div className="md:w-6/12 w-full md:block flex items-center gap-3.5">
+            <div className="w-20 h-20 relative rounded-sm overflow-hidden bg-gray-700 md:mb-3">
               <Image
                 src="/professional-asian-restaurant-owner-portrait.jpg"
                 alt="LIN Zhengsen"
@@ -22,12 +22,12 @@ export function Footer() {
               />
             </div>
             <div>
-              <p className="font-blauerBold text-navyBlue text-[15px] leading-none">{t.footer.owner}</p>
+              <p className="font-blauerBold text-navyBlue text-[15px] leading-none mb-0.5">{t.footer.owner}</p>
               <p className="text-black text-xs leading-none">LIN Zhengsen</p>
             </div>
           </div>
 
-          <div className="space-y-4 w-6/12">
+          <div className="space-y-2 md:space-y-4 w-full md:w-6/12">
             <div>
               <p className="font-blauerBold text-[15px] text-navyBlue ">{t.footer.contact}</p>
               <p className="text-navyBlue text-xs">
@@ -43,7 +43,7 @@ export function Footer() {
           </div>
           <div className="w-full">
             <p className="font-blauerBold text-[15px] text-navyBlue md:text-end mb-1">{t.footer.follow}</p>
-            <div className="flex md:justify-end gap-2 md:mb-6 mb-4 md:mt-0 mt-4">
+            <div className="flex md:justify-end gap-2 md:mb-6 mb-4 md:mt-0 mt-1">
               <a
                 href="#"
                 className="w-7 h-7 rounded-full bg-navyBlue hover:bg-gray-700 flex items-center justify-center transition-colors"
@@ -78,7 +78,7 @@ export function Footer() {
         </div>
       </div>
     </footer>
-    <p className="font-blauerBold text-white bg-navyBlue p-4 text-center" >ALL COPYRIGHT RESERVED</p>
+    <p className="font-blauerBold text-white bg-navyBlue p-4 text-center text-sm md:text-base" >ALL COPYRIGHT RESERVED</p>
     </>
   )
 }

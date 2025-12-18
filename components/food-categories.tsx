@@ -68,27 +68,27 @@ export function FoodCategories() {
     <section className="py-20 pb-0 bg-white">
       <div className="container-sm mx-auto px-4" >
         <div className="text-center mb-12 max-w-206.25 mx-auto">
-          <Badge className="border-[.5px] border-navyBlue text-navyBlue rounded-full bg-transparent text-lg md:text-xl px-6 py-1 font-normal mb-8">
+          <Badge className="border-[.5px] border-navyBlue text-navyBlue rounded-full bg-transparent text-base md:text-xl px-6 py-1 font-normal mb-8">
             {t.categories.badge}
           </Badge>
           <h2 className="font-heading text-navyBlue md:text-4xl text-2xl lg:text-6xl mb-4 text-balance">{t.categories.title}</h2>
-          <p className="text-xl md:text-2xl font-normal text-black max-w-3xl mx-auto text-pretty">{t.categories.subtitle}</p>
+          <p className="text-base md:text-xl lg:text-2xl font-normal text-black max-w-3xl mx-auto leading-snug text-pretty">{t.categories.subtitle}</p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto mb-10">
           {t.categories.items.map((item, index) => (
             <div
               key={item.label}
               className="bg-navyBlue text-white p-4 py-7 text-center rounded-lg hover:bg-[#1a2f45] transition-colors cursor-pointer flex flex-col items-center"
             >
               <div className="text-5xl mb-6 text-center">{categoryIcons[index]}</div>
-              <h3 className="font-heading text-center md:text-2xl tracking-wide">{item.label}</h3>
+              <h3 className="font-heading text-center text-base sm:text-lg md:text-2xl tracking-wide">{item.label}</h3>
             </div>
           ))}
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="rounded-full text-xl bg-navyBlue hover:bg-btnSecondary hover:text-navyBlue text-white cursor-pointer px-6">
+          <Button size="lg" className="rounded-full text-base md:text-xl bg-navyBlue hover:bg-btnSecondary hover:text-navyBlue text-white cursor-pointer px-6">
             {t.categories.cta}
           </Button>
         </div>
