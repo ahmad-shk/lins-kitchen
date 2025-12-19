@@ -5,6 +5,7 @@ export const translations = {
     nav: {
       home: "HOME",
       menu: "MENU",
+      lunchMenu: "LUNCH MENU",
       contact: "Contact",
     },
     hero: {
@@ -68,25 +69,32 @@ export const translations = {
     nav: {
       home: "HOME",
       menu: "MENÜ",
+      lunchMenu: "SPEISEKARTE",
       contact: "Kontakt",
     },
     hero: {
-      title: "EIN GESCHMACK CHINAS,",
-      titleAccent: "AUF LIN'S ART SERVIERT",
-      subtitle: "Gute Zutaten. Echter Geschmack. Frisch zubereitet, sobald Sie bestellen.",
-      cta: "Menü erkunden",
+      title: "Ein Hauch von China,",
+      titleAccent: "serviert nach Lin's Art",
+      subtitle: "Gute Zutaten. Echter Geschmack. Frisch zubereitet nach Ihrer Bestellung.",
+      cta: "Entdecken Sie das Menü",
     },
     about: {
       badge: "Über uns",
       description:
-        "Lin's Kitchen dreht sich um frische, einfache asiatische Küche, die vor Ort zubereitet wird. Wir kochen mit guten Zutaten und halten die Aromen ehrlich und komfortabel.",
+        "Bei Lin’s Kitchen dreht sich alles um frische, einfache asiatische Küche, die vor Ort zubereitet wird. Wir kochen mit guten Zutaten und legen Wert auf authentische und wohltuende Aromen.",
     },
     offers: {
       badge: "Monatsangebot",
-      title: "SPEZIELLE ANGEBOTE FÜR DEZEMBER",
+      title: "Sonderangebote für Dezember",
       items: [
         {
-          title: "Traditionelle Thai-Hähnchen-Kuchen",
+          title: "Traditionelle thailändische Hühnerfrikadellen",
+          description:
+            "Fein gehacktes Hähnchen, verfeinert mit roter Curry-Paste und asiatischen Kräutern. Thai-rot-golden gebraten.",
+          price: "5 Stück — 6,80 €",
+        },
+         {
+          title: "Traditionelle thailändische Hühnerfrikadellen",
           description:
             "Fein gehacktes Hähnchen, verfeinert mit roter Curry-Paste und asiatischen Kräutern. Thai-rot-golden gebraten.",
           price: "5 Stück — 6,80 €",
@@ -95,20 +103,20 @@ export const translations = {
     },
     categories: {
       badge: "Menü",
-      title: "WÄHLEN SIE IHR LIEBLINGSGERICHT",
+      title: "Wählen Sie Ihr Lieblingsgericht",
       subtitle:
-        "Frische asiatische Gerichte auf Bestellung zubereitet. Schnell, geschmackvoll und mit einfachen, ehrlichen Zutaten zubereitet.",
+        "Frische asiatische Gerichte nach Wunsch zubereitet. Schnell, schmackhaft und mit einfachen, ehrlichen Zutaten zubereitet.",
       cta: "Menü ansehen",
-      items: [{ label: "FRÜHSTÜCK" }, { label: "MITTAGESSEN" }, { label: "ABENDESSEN" }, { label: "DESSERT" }],
+      items: [{ label: "Frühstück" }, { label: "Mittagessen" }, { label: "Abendessen" }, { label: "Dessert" }],
     },
     ambiance: {
-      title: "AMBIENTE & ERLEBNIS",
+      title: "Ambiente & Erlebnis",
       description:
-        "Lin's Kitchen ist ein warmer, entspannter Ort, um frische asiatische Küche zu genießen. Der Raum ist einfach, sauber und komfortabel, damit Sie sich entspannen können, während Ihre Mahlzeit frisch zubereitet wird.",
+        "Lin’s Kitchen ist ein gemütliches und entspanntes Lokal, in dem man frische asiatische Küche genießen kann. Die Räumlichkeiten sind schlicht, sauber und komfortabel, sodass Sie sich entspannen können, während Ihr Essen frisch zubereitet wird.",
     },
     visit: {
-      title: "BESUCHEN SIE LIN'S KITCHEN",
-      subtitle: "Wir sind leicht zu erreichen und jeden Tag zum Mittag- und Abendessen geöffnet.",
+      title: "Besuchen Sie Lin’s Kitchen",
+      subtitle: "Wir sind leicht zu erreichen und haben täglich zum Mittag- und Abendessen geöffnet.",
       timing: {
         title: "ÖFFNUNGSZEITEN",
         weekdays: "DI - SO: 11:30 - 14:30 und 17:30 - 22:00",

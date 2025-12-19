@@ -67,6 +67,12 @@ export function Navigation() {
             </a>
 
             <div className="w-full my-3 border-b border-navyBlue" />
+            <a href="#lunchMenu" className="hover:text-gray-300 transition-colors text-base md:text-xl">
+              {t.nav.lunchMenu}
+            </a>
+
+            <div className="w-full my-3 border-b border-navyBlue" />
+
 
             <Button
               variant="outline"
@@ -79,7 +85,7 @@ export function Navigation() {
             <div className="w-full my-3 border-b border-navyBlue" />
           </div>
 
-          <LanguageSwitcher />
+          {/* <LanguageSwitcher /> */}
         </div>
       </div>
     </nav>
