@@ -16,7 +16,7 @@ const Menu = () => {
         <PageInfo
             badge="Speisekarte" 
             title="Asiatische Küche mit Sorgfalt zubereitet"
-            description="Genießen Sie frische asiatische Küche mit Wok-Gemüse, knuspriger Ente, duftenden Currys und Sushi. Jedes Gericht wird mit aromatischen Gewürzen und leichten Saucen sorgfältig zubereitet; es gibt eine große Auswahl an vegetarischen Optionen."
+            description="Unsere asiatische Küche verbindet frische Zutaten mit wok-gegartem Gemüse, aromatischen Gewürzen und leichten Saucen. Von knuspriger Ente über duftende Currys bis hin zu Sushi & Maki – wir bereiten jede Speise mit Sorgfalt zu. Vegetarische Optionen sind selbstverständlich verfügbar."
         />
         <div className='bg-navyBlue'>
             <div className='max-w-[1176px] px-4 mx-auto'>

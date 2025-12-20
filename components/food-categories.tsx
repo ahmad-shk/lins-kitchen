@@ -88,7 +88,7 @@ export function FoodCategories() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="rounded-full text-base md:text-xl bg-navyBlue hover:bg-btnSecondary hover:text-navyBlue text-white cursor-pointer px-6">
+          <Button size="lg" className="rounded-full text-base md:text-xl bg-navyBlue hover:bg-btnSecondary hover:text-navyBlue text-white cursor-pointer px-6" onClick={() => { window.location.href = '/menu' }}>
             {t.categories.cta}
           </Button>
         </div>
@@ -96,7 +96,7 @@ export function FoodCategories() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-20">
           {foodImages.map((image, index) => (
             <div key={index} className="aspect-square relative overflow-hidden">
-              <Image
+              <Image 
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
                 fill

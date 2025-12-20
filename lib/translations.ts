@@ -134,7 +134,7 @@ export const translations = {
       email: "E-Mail",
       follow: "FOLGEN",
       payment: "ZAHLUNG AKZEPTIERT",
-      paymentMethods: "Bargeld, Karte willkommen",
+      paymentMethods: "Bar, Bankomat, MasterCard",
     },
   },
 }

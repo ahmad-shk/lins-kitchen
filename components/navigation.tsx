@@ -28,12 +28,15 @@ export function Navigation() {
     <nav className="bg-navyBlue text-white py-5 md:py-7 md:px-4 relative">
       <div className="container-sm flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Image
-            src="/images/home-page/logo.svg"
-            width={234}
-            height={40}
-            alt="logo"
-          />
+          <Link href="/">
+            <Image
+              src="/images/home-page/logo.svg"
+              width={234}
+              height={40}
+              alt="logo"
+              className="cursor-pointer"
+            />
+          </Link>
         </div>
 
         <button
@@ -44,18 +47,16 @@ export function Navigation() {
         </button>
 
         <div
-          className={`md:flex items-center md:gap-6 gap-3 mobile-menu ${
-            mobileMenuOpen
+          className={`md:flex items-center md:gap-6 gap-3 mobile-menu ${mobileMenuOpen
               ? "block bg-btnSecondary absolute left-0 top-full w-full z-40 p-4"
               : "hidden"
-          }`}
+            }`}
         >
           <div
-            className={`flex items-center md:gap-6 ${
-              mobileMenuOpen
+            className={`flex items-center md:gap-6 ${mobileMenuOpen
                 ? "flex-col items-start gap-0 text-navyBlue text-sm"
                 : ""
-            }`}
+              }`}
           >
             <Link href="/" className="hover:text-gray-300 transition-colors text-base md:text-xl">
               {t.nav.home}
