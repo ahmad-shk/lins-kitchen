@@ -118,6 +118,9 @@
   --font-heading: "shuriken", sans-serif;
   --font-body: "blauer-regular", sans-serif;
 
+  --font-playfair: var(--font-playfair);
+  --font-inter: var(--font-inter);
+
   --font-blauerBold: "blauer-bold", sans-serif;
   --font-blauerLight: "blauer-light", sans-serif;
 
@@ -179,7 +182,7 @@
 
 
 body {
-  @apply font-body font-normal;
+  @apply font-inter font-normal;
 }
 
 .container-sm {
@@ -239,4 +242,38 @@ body {
 
   .ambiance-swiper .arrow {left: 15px;}
   .ambiance-swiper .arrow.slick-arrow-next {right: 15px;}
+}
+
+.menu-swiper img {
+  width: 100%;
+}
+.menu-swiper .swiper-slide {
+  transition: all .5s ease;
+}
+.menu-swiper .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.4; 
+}
+.menu-swiper .swiper-slide-active {
+  transform: translateZ(0) scale(1, 1.1) !important;
+}
+
+.menu-swiper .swiper-button-prev {
+  width: 50px; height: 50px; background: url(/images/slider-arrow.svg) center center no-repeat; background-size: cover;
+  left: 12% !important;
+}
+.menu-swiper .swiper-button-prev svg {
+  display: none;
+}
+
+.menu-swiper .swiper-button-next {
+  width: 50px; height: 50px; background: url(/images/slider-next-arrow.svg) center center no-repeat; background-size: cover;
+  right: 12% !important;
+}
+.menu-swiper .swiper-button-next svg {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-swiper .swiper-button-prev {width: 30px; height: 30px; left: 10px !important}
+  .menu-swiper .swiper-button-next {width: 30px; height: 30px; right: 10px !important}
 }

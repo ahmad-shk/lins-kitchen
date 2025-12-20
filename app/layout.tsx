@@ -1,11 +1,22 @@
 import type { Metadata } from 'next'
-import { Outfit, Space_Grotesk } from 'next/font/google'
+import { Inter, Playfair, } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { Providers } from './providers'
+import { Navigation } from '@/components/navigation'
+import { Footer } from '@/components/footer'
+import { LogoSection } from '@/components/logo-section'
 
-const outfit = Outfit({ subsets: ['latin'] })
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const playfair = Playfair({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
 
 export const metadata: Metadata = {
   title: "Lin's Kitchen - Authentische Asiatische Küche | Perchtoldsdorf",
@@ -29,9 +40,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="font-sans antialiased">
+      <body  className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         <Providers>
+          <Navigation />
           {children}
+          <LogoSection />
+          <Footer />
         </Providers>
         <Analytics />
       </body>

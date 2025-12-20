@@ -6,6 +6,7 @@ import { useLanguage } from "@/contexts/language-context"
 import Image from "next/image"
 import { MenuIcon, X } from "lucide-react"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 export function Navigation() {
   const { t } = useLanguage()
@@ -56,31 +57,30 @@ export function Navigation() {
                 : ""
             }`}
           >
-            <a href="#" className="hover:text-gray-300 transition-colors text-base md:text-xl">
+            <Link href="/" className="hover:text-gray-300 transition-colors text-base md:text-xl">
               {t.nav.home}
-            </a>
+            </Link>
 
             <div className="w-full my-3 border-b border-navyBlue" />
 
-            <a href="#menu" className="hover:text-gray-300 transition-colors text-base md:text-xl">
+            <Link href="/menu" className="hover:text-gray-300 transition-colors text-base md:text-xl">
               {t.nav.menu}
-            </a>
+            </Link>
 
             <div className="w-full my-3 border-b border-navyBlue" />
-            <a href="#lunchMenu" className="hover:text-gray-300 transition-colors text-base md:text-xl">
+            <Link href="/lunch-menus" className="hover:text-gray-300 transition-colors text-base md:text-xl">
               {t.nav.lunchMenu}
-            </a>
+            </Link>
 
             <div className="w-full my-3 border-b border-navyBlue" />
 
 
-            <Button
-              variant="outline"
-              size="sm"
-              className="rounded-full text-navyBlue border-navyBlue bg-white hover:border-white hover:bg-transparent hover:text-white text-base cursor-pointer px-5"
+            <Link
+              href="/contact"
+              className="inline-block border rounded-full text-navyBlue border-navyBlue bg-white hover:border-white hover:bg-transparent hover:text-white text-base cursor-pointer py-2 px-5 leading-none"
             >
               {t.nav.contact}
-            </Button>
+            </Link>
 
             <div className="w-full my-3 border-b border-navyBlue" />
           </div>

@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Phone, Mail, Facebook, Instagram, Youtube, FacebookIcon } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 export function Footer() {
@@ -9,7 +8,7 @@ export function Footer() {
 
   return (
     <>
-    <footer className="bg-[#F3F3F4] text-white py-8">
+    <footer className="bg-gray-200 text-white py-8">
       <div className="container-sm mx-auto px-4">
         <div className="md:grid flex flex-wrap md:grid-cols-3 md:gap-12 space-y-2 md:space-y-0">
           <div className="md:w-6/12 w-full md:block flex items-center gap-3.5">

@@ -11,15 +11,12 @@ import { Footer } from "@/components/footer"
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Navigation />
       <HeroBanner />
       <AboutUs />
       <SpecialOffers />
       <FoodCategories />
       <AmbianceGallery />
       <VisitInfo />
-      <LogoSection />
-      <Footer />
     </div>
   )
 }
