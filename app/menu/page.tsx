@@ -36,45 +36,57 @@ const Menu = () => {
                 >
                     <SwiperSlide>
                         <img
-                        src="/images/Menu-3.png"
-                        alt="Menu 3"
-                        className="mx-auto"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img
-                        src="/images/Menu-1.png"
+                        src="/images/Menu-1.jpg"
                         alt="Menu 1"
                         className="mx-auto"
                         />
                     </SwiperSlide>
-
                     <SwiperSlide>
                         <img
-                        src="/images/Menu-2.png"
+                        src="/images/Menu-2.jpg"
                         alt="Menu 2"
                         className="mx-auto"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                        src="/images/Menu-3.png"
+                        src="/images/Menu-3.jpg"
                         alt="Menu 3"
                         className="mx-auto"
                         />
                     </SwiperSlide>
                     <SwiperSlide>
                         <img
-                        src="/images/Menu-1.png"
-                        alt="Menu 1"
+                        src="/images/Menu-4.jpg"
+                        alt="Menu 4"
                         className="mx-auto"
                         />
                     </SwiperSlide>
-
                     <SwiperSlide>
                         <img
-                        src="/images/Menu-2.png"
-                        alt="Menu 2"
+                        src="/images/Menu-5.jpg"
+                        alt="Menu 5"
+                        className="mx-auto"
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img
+                        src="/images/Menu-6.jpg"
+                        alt="Menu 6"
+                        className="mx-auto"
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img
+                        src="/images/Menu-7.jpg"
+                        alt="Menu 7"
+                        className="mx-auto"
+                        />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img
+                        src="/images/Mittagsmenu.jpg"
+                        alt="Mittagsmenu"
                         className="mx-auto"
                         />
                     </SwiperSlide>
