@@ -65,10 +65,10 @@ const ProductsListing = () => {
               <Image src="/images/product-img1.png" width={380} height={540} alt="product"/>
             </div>
           </div>
-          <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between font-playfair">
-            <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl lg:text-3xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M26</span>
-            <h4 className="text-lg sm:text-2xl lg:text-3xl uppercase flex-1 max-sm:leading-snug">4 Laughing Sushi + 6 Ebi<br className="max-sm:hidden"/> Tempura Roll</h4>
-            <span className="text-btnSecondary text-2xl lg:text-[40px] tracking-tighter">€ 13,90</span>
+          <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
+            <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M26</span>
+            <h4 className="text-lg sm:text-2xl uppercase flex-1 max-sm:leading-snug">4 Laughing Sushi + 6 Ebi<br className="max-sm:hidden"/> Tempura Roll</h4>
+            <span className="text-btnSecondary text-2xl lg:text-[30px] tracking-tighter">€ 13,90</span>
           </div>
         </div>
         <div className="space-y-9">
@@ -107,10 +107,10 @@ const ProductsListing = () => {
               <Image src="/images/product-img-2.png" width={380} height={540} alt="product"/>
             </div>
           </div>
-          <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between font-playfair">
-            <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl lg:text-3xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M28</span>
-            <h4 className="text-lg sm:text-2xl lg:text-3xl uppercase flex-1 max-sm:leading-snug">4 Lachs-Sushi + 6<br className="max-sm:hidden"/> Califormaki</h4>
-            <span className="text-btnSecondary text-2xl md:text-[40px] tracking-tighter">€ 13,90</span>
+          <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
+            <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M28</span>
+            <h4 className="text-lg sm:text-2xl uppercase flex-1 max-sm:leading-snug">4 Lachs-Sushi + 6<br className="max-sm:hidden"/> Califormaki</h4>
+            <span className="text-btnSecondary text-2xl md:text-[30px] tracking-tighter">€ 13,90</span>
           </div>
         </div>
         <div className="space-y-9">
@@ -150,15 +150,15 @@ const ProductsListing = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between font-playfair">
-              <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl lg:text-3xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M23</span>
-              <h4 className="text-lg sm:text-2xl lg:text-3xl uppercase flex-1 max-sm:leading-snug">Acht<br className="max-sm:hidden"/> Schätze</h4>
-              <span className="text-btnSecondary text-2xl lg:text-[40px] tracking-tighter">€ 13,90</span>
+            <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
+              <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M23</span>
+              <h4 className="text-lg sm:text-2xl uppercase flex-1 max-sm:leading-snug">Acht<br className="max-sm:hidden"/> Schätze</h4>
+              <span className="text-btnSecondary text-2xl lg:text-[30px] tracking-tighter">€ 13,90</span>
             </div>
-            <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between font-playfair">
-              <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl lg:text-3xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M29</span>
-              <h4 className="text-lg sm:text-2xl lg:text-3xl uppercase flex-1 max-sm:leading-snug">General Zhus<br className="max-sm:hidden"/> Huhn</h4>
-              <span className="text-btnSecondary text-2xl md:text-[40px] tracking-tighter">€ 13,90</span>
+            <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
+              <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M29</span>
+              <h4 className="text-lg sm:text-2xl uppercase flex-1 max-sm:leading-snug">General Zhus<br className="max-sm:hidden"/> Huhn</h4>
+              <span className="text-btnSecondary text-2xl md:text-[30px] tracking-tighter">€ 13,90</span>
             </div>
           </div>
         </div>
@@ -204,10 +204,10 @@ const ProductsListing = () => {
               <Image src="/images/product-img-3.png" width={380} height={540} alt="product"/>
             </div>
           </div>
-          <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between font-playfair">
-            <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl lg:text-3xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M23</span>
-            <h4 className="text-lg sm:text-2xl lg:text-3xl uppercase flex-1 max-sm:leading-snug">6 Lachs-Sushi + 6 Lachs-<br className="max-sm:hidden"/> Lemuren</h4>
-            <span className="text-btnSecondary text-2xl md:text-[40px] tracking-tighter">€ 13,90</span>
+          <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
+            <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M23</span>
+            <h4 className="text-lg sm:text-2xl uppercase flex-1 max-sm:leading-snug">6 Lachs-Sushi + 6 Lachs-<br className="max-sm:hidden"/> Lemuren</h4>
+            <span className="text-btnSecondary text-2xl md:text-[30px] tracking-tighter">€ 13,90</span>
           </div>
         </div>
 
