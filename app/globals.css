@@ -186,11 +186,14 @@ body {
 }
 
 .container-sm {
-  max-width: 840px;
+  max-width: 994px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+.slider-container .container-sm {
+  max-width: 840px;
+}
 
 .offers-bg {
   background: #0F1C2A url(/images/home-page/offers-bg.png) center center;

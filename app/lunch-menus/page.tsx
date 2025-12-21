@@ -18,7 +18,7 @@ const Menu = () => {
             title="Asiatische Küche mit Sorgfalt zubereitet"
             description="Unsere asiatische Küche verbindet frische Zutaten mit wok-gegartem Gemüse, aromatischen Gewürzen und leichten Saucen. Von knuspriger Ente über duftende Currys bis hin zu Sushi & Maki – wir bereiten jede Speise mit Sorgfalt zu. Vegetarische Optionen sind selbstverständlich verfügbar."
         />
-        <div className='bg-navyBlue'>
+        <div className='bg-navyBlue slider-container'>
             <div className='container-sm'>
                 <Swiper
                 modules={[Navigation]}

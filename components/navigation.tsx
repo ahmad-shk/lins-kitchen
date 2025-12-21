@@ -47,13 +47,13 @@ export function Navigation() {
         </button>
 
         <div
-          className={`md:flex items-center md:gap-6 gap-3 mobile-menu ${mobileMenuOpen
+          className={`md:flex items-center gap-3 mobile-menu ${mobileMenuOpen
               ? "block bg-btnSecondary absolute left-0 top-full w-full z-40 p-4"
               : "hidden"
             }`}
         >
           <div
-            className={`flex items-center md:gap-6 ${mobileMenuOpen
+            className={`flex items-center gap-3 ${mobileMenuOpen
                 ? "flex-col items-start gap-0 text-navyBlue text-sm"
                 : ""
               }`}
