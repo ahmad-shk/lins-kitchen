@@ -10,7 +10,7 @@ const FeatureItem = () => {
             <Image src="/images/feature-lunch.png" alt="feature-item" className="object-cover" width={312} height={212} />
           </div>
           <div className="">
-            <h3 className="font-playfair font-semibold text-3xl lg:text-[40px] leading-none lg:min-h-20 mb-2.5">Optionale Zusatzfunktionen</h3>
+            <h3 className="font-playfair font-semibold text-3xl lg:text-3xl leading-none lg:min-h-20 mb-2.5">Optionale Zusatzfunktionen</h3>
             <ul className="lg:text-xl text-base list-disc pl-6">
               <li>Große Frühlingsrolle</li>
               <li>Mini-Frühlingsrollen</li>
@@ -18,7 +18,7 @@ const FeatureItem = () => {
             </ul>
           </div>
           <div className="">
-            <h3 className="font-playfair font-semibold text-3xl lg:text-[40px] leading-none lg:min-h-20 mb-2.5">Mittagspause</h3>
+            <h3 className="font-playfair font-semibold text-3xl lg:text-3xl leading-none lg:min-h-20 mb-2.5">Mittagspause</h3>
             <p className="font-inter lg:text-xl text-base mb-2 leading-tight" >Dienstag – Sonntag<br/> 11:30 – 14:30 Uhr</p>
             <p className="font-inter italic text-[15px] leading-tight">Mittagsmenüs am Wochenende sind gegen einen Aufpreis von 2,00 € erhältlich.</p>
           </div>

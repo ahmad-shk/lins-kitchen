@@ -71,7 +71,7 @@ export function FoodCategories() {
           <Badge className="border-[.5px] border-navyBlue text-navyBlue rounded-full bg-transparent text-base md:text-xl px-6 py-1 font-normal mb-8">
             {t.categories.badge}
           </Badge>
-          <h2 className="font-playfair uppercase text-navyBlue md:text-4xl text-3xl lg:text-6xl mb-4 text-balance">{t.categories.title}</h2>
+          <h2 className="font-playfair uppercase text-navyBlue md:text-4xl text-3xl lg:text-5xl mb-4 text-balance">{t.categories.title}</h2>
           <p className="text-base md:text-xl lg:text-2xl font-normal text-black max-w-3xl mx-auto leading-snug text-pretty">{t.categories.subtitle}</p>
         </div>
 

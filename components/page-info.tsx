@@ -14,8 +14,8 @@ const PageInfo = ({badge,title,description}: BannerProps) => {
           <Badge className="border-[.5px] border-navyBlue text-navyBlue rounded-full bg-transparent font-inter text-base md:text-xl px-6 py-1.5 font-normal mb-6">
             {badge}
           </Badge>
-          <h2 className="text-navyBlue text-3xl md:text-4xl lg:text-6xl font-semibold font-playfair leading-none uppercase mb-6">{title}</h2>
-          <p className="text-lg md:text-3xl text-black font-inter font-normal leading-snug">{description}</p>
+          <h2 className="text-navyBlue text-3xl md:text-4xl lg:text-5xl font-semibold font-playfair leading-none uppercase mb-6">{title}</h2>
+          <p className="text-lg md:text-2xl text-black font-inter font-normal leading-snug">{description}</p>
         </div>
       </div>
     </div>

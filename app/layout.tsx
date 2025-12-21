@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair, } from 'next/font/google'
+import { Inter, Playfair, Playfair_Display, } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { Providers } from './providers'
@@ -12,7 +12,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const playfair = Playfair({
+const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
 });

@@ -43,7 +43,7 @@ export function AboutUs() {
           <Badge className="border-[.5px] border-navyBlue text-navyBlue rounded-full bg-transparent text-base md:text-xl px-6 py-1 font-normal mb-6">
             {t.about.badge}
           </Badge>
-          <p className="text-base leading-snug md:text-2xl lg:text-4xl text-black text-pretty">{t.about.description}</p>
+          <p className="text-base md:text-xl lg:text-3xl text-black text-pretty leading-tight">{t.about.description}</p>
         </div>
       </div>
     </section>
