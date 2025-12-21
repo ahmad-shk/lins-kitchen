@@ -118,7 +118,7 @@
   --font-heading: "shuriken", sans-serif;
   --font-body: "blauer-regular", sans-serif;
 
-  --font-playfair: var(--font-playfair);
+  --font-playfair: "Playfair Display", ui-serif, Georgia, serif;
   --font-inter: var(--font-inter);
 
   --font-blauerBold: "blauer-bold", sans-serif;
@@ -186,7 +186,7 @@ body {
 }
 
 .container-sm {
-  max-width: 994px;
+  max-width: 840px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -258,7 +258,7 @@ body {
 }
 
 .menu-swiper .swiper-button-prev {
-  width: 50px; height: 50px; background: url(/images/slider-arrow.svg) center center no-repeat; background-size: cover;
+  width: 30px; height: 30px; background: url(/images/slider-arrow.svg) center center no-repeat; background-size: cover;
   left: 12% !important;
 }
 .menu-swiper .swiper-button-prev svg {
@@ -266,7 +266,7 @@ body {
 }
 
 .menu-swiper .swiper-button-next {
-  width: 50px; height: 50px; background: url(/images/slider-next-arrow.svg) center center no-repeat; background-size: cover;
+  width: 30px; height: 30px; background: url(/images/slider-next-arrow.svg) center center no-repeat; background-size: cover;
   right: 12% !important;
 }
 .menu-swiper .swiper-button-next svg {

@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 
 export function Footer() {
@@ -12,18 +11,8 @@ export function Footer() {
         <div className="container-sm mx-auto px-4">
           <div className="md:grid flex flex-wrap md:grid-cols-3 md:gap-12 space-y-2 md:space-y-0">
             <div className="md:w-6/12 w-full md:block flex items-center gap-3.5">
-              <div className="w-20 h-20 relative rounded-sm overflow-hidden bg-gray-700 md:mb-3">
-                <Image
-                  src="/professional-asian-restaurant-owner-portrait.jpg"
-                  alt="LIN Zhengsen"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <p className="font-blauerBold text-navyBlue text-[15px] leading-none mb-0.5">{t.footer.owner}</p>
-                <p className="text-black text-xs leading-none">LIN Zhengsen</p>
-              </div>
+                <p className="font-blauerBold text-navyBlue text-base leading-none mb-1">{t.footer.owner}</p>
+                <p className="text-black text-sm leading-none">LIN Zhengsen</p>
             </div>
 
             <div className="space-y-2 md:space-y-4 w-full md:w-6/12">
