@@ -88,10 +88,10 @@ export const translations = {
       title: "Sonderangebote für Dezember",
       items: [
         {
-          title: "Traditionelle thailändische Hühnerfrikadellen",
+          title: "Traditionelle thailändische Chicken Cakes",
           description:
-            "Fein gehacktes Hähnchen, verfeinert mit roter Curry-Paste und asiatischen Kräutern. Thai-rot-golden gebraten.",
-          price: "5 Stück — 6,80 €",
+            "Fein zerkleinertes Hühnerfleisch, verfeinert mit roter Curry-Paste und asiatischen Kräutern, goldbraun gebraten. Begleitet von unserer hausgemachten Sweet-Chili-Sauce.",
+          price: "5 Stk. // 6,50 €",
         },
         //  {
         //   title: "Traditionelle thailändische Hühnerfrikadellen",
