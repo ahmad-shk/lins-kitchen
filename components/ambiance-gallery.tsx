@@ -12,52 +12,28 @@ import { useEffect, useRef, useState } from "react";
 
 const ambianceImages = [
   {
-    src: "/elegant-restaurant-table-setting-with-greenery-run.jpg",
+    src: "/amb-1.jpg",
     alt: "Tischdekoration",
   },
   {
-    src: "/long-elegant-dining-table-with-white-plates-and-gr.jpg",
+    src: "/amb-2.jpg",
     alt: "Restaurantinterieur",
   },
   {
-    src: "/cozy-restaurant.png",
+    src: "/amb-4.jpg",
     alt: "Gemütlicher Essbereich",
   },
   {
-    src: "/elegant-restaurant-table-setting-with-greenery-run.jpg",
+    src: "/amb-5.jpg",
     alt: "Tischdekoration",
   },
   {
-    src: "/long-elegant-dining-table-with-white-plates-and-gr.jpg",
-    alt: "Restaurantinterieur",
-  },
-  {
-    src: "/cozy-restaurant.png",
+    src: "/amb-1.jpg",
     alt: "Gemütlicher Essbereich",
   },
   {
-    src: "/elegant-restaurant-table-setting-with-greenery-run.jpg",
-    alt: "Tischdekoration",
-  },
-  {
-    src: "/long-elegant-dining-table-with-white-plates-and-gr.jpg",
+    src: "/amb-6.jpg",
     alt: "Restaurantinterieur",
-  },
-  {
-    src: "/cozy-restaurant.png",
-    alt: "Gemütlicher Essbereich",
-  },
-  {
-    src: "/elegant-restaurant-table-setting-with-greenery-run.jpg",
-    alt: "Tischdekoration",
-  },
-  {
-    src: "/long-elegant-dining-table-with-white-plates-and-gr.jpg",
-    alt: "Restaurantinterieur",
-  },
-  {
-    src: "/cozy-restaurant.png",
-    alt: "Gemütlicher Essbereich",
   },
 ]
 

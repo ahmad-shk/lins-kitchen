@@ -7,7 +7,7 @@ const FeatureItem = () => {
       <div className='container-sm relative'>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           <div className="image rounded-2xl overflow-hidden sm:col-span-2 lg:col-span-1 flex items-center justify-center">
-            <Image src="/images/feature-lunch.png" alt="feature-item" className="object-cover" width={312} height={212} />
+            <Image src="/images/image-5.jpg" alt="feature-item" className="object-cover" width={312} height={212} />
           </div>
           <div className="">
             <h3 className="font-playfair font-semibold text-3xl lg:text-3xl leading-none lg:min-h-20 mb-2.5">Optionale Zusatzfunktionen</h3>
