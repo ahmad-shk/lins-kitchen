@@ -4,7 +4,9 @@ import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 import { Badge } from "./ui/badge"
 
-const offerImages = ["/images/image-18.jpg", "/fresh-sushi-rolls-with-shrimp-and-vegetables.jpg"]
+const offerImages = ["/images/image-18.jpg", 
+  // "/fresh-sushi-rolls-with-shrimp-and-vegetables.jpg"
+]
 
 export function SpecialOffers() {
   const { t } = useLanguage()

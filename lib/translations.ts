@@ -81,7 +81,7 @@ export const translations = {
     about: {
       badge: "Über uns",
       description:
-        "Bei Lin’s Kitchen dreht sich alles um frische, einfache asiatische Küche, die vor Ort zubereitet wird. Wir kochen mit guten Zutaten und legen Wert auf authentische und wohltuende Aromen.",
+        "Bei Lin’s Kitchen dreht sich alles um frische, asiatische Küche, die vor Ort zubereitet wird. Wir kochen mit guten Zutaten und legen Wert auf authentische und wohltuende Aromen.",
     },
     offers: {
       badge: "Monatsangebot",
@@ -93,12 +93,12 @@ export const translations = {
             "Fein gehacktes Hähnchen, verfeinert mit roter Curry-Paste und asiatischen Kräutern. Thai-rot-golden gebraten.",
           price: "5 Stück — 6,80 €",
         },
-         {
-          title: "Traditionelle thailändische Hühnerfrikadellen",
-          description:
-            "Fein gehacktes Hähnchen, verfeinert mit roter Curry-Paste und asiatischen Kräutern. Thai-rot-golden gebraten.",
-          price: "5 Stück — 6,80 €",
-        },
+        //  {
+        //   title: "Traditionelle thailändische Hühnerfrikadellen",
+        //   description:
+        //     "Fein gehacktes Hähnchen, verfeinert mit roter Curry-Paste und asiatischen Kräutern. Thai-rot-golden gebraten.",
+        //   price: "5 Stück — 6,80 €",
+        // },
       ],
     },
     categories: {

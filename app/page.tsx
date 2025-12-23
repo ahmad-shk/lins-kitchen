@@ -11,7 +11,7 @@ export default function Home() {
       <HeroBanner />
       <AboutUs />
       <SpecialOffers />
-      <FoodCategories />
+      {/* <FoodCategories /> */}
       <AmbianceGallery />
       <VisitInfo />
     </div>

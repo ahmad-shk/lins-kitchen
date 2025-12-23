@@ -120,7 +120,7 @@ export function FoodCategories() {
          observeParents
          className="mt-10"
       >
-        {foodImages.map((image, index) => (
+        {/* {foodImages.map((image, index) => (
           <SwiperSlide key={index}>
             <div className="aspect-square relative overflow-hidden">
               <Image 
@@ -131,7 +131,7 @@ export function FoodCategories() {
               />
             </div>
           </SwiperSlide>
-        ))}
+        ))} */}
       </Swiper>
     </section>
   )
