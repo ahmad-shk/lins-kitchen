@@ -186,11 +186,14 @@ body {
 }
 
 .container-sm {
-  max-width: 840px;
+  max-width: 994px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+.slider-container .container-sm {
+  max-width: 840px;
+}
 
 .offers-bg {
   background: #0F1C2A url(/images/home-page/offers-bg.png) center center;
@@ -277,3 +280,6 @@ body {
   .menu-swiper .swiper-button-prev {width: 30px; height: 30px; left: 10px !important}
   .menu-swiper .swiper-button-next {width: 30px; height: 30px; right: 10px !important}
 }
+
+.food-categories .swiper-button-prev, 
+.food-categories .swiper-button-next {color: #fff;}

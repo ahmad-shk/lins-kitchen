@@ -5,6 +5,12 @@ import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 import { Badge } from "./ui/badge"
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+
 const categoryIcons = [
   <svg width="102" height="86" viewBox="0 0 102 86" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M49.7446 20.0345C50.3745 20.4134 51.0802 20.6027 51.7865 20.6027C52.4924 20.6027 53.1986 20.4132 53.828 20.0345C59.5066 16.6181 61.3276 14.8149 62.5887 13.3927C64.2758 11.4905 65.0961 9.61241 65.0961 7.65093C65.0961 3.4322 61.6639 0 57.4451 0C55.2527 0 53.2118 0.935498 51.7863 2.50184C50.361 0.9353 48.3201 0 46.1275 0C41.9088 0 38.4766 3.4322 38.4766 7.65093C38.4766 9.61222 39.2967 11.4903 40.9837 13.3927C42.245 14.8149 44.0662 16.6183 49.7446 20.0345ZM46.1275 2.96356C47.9943 2.96356 49.6822 4.07114 50.4272 5.78527C50.6623 6.32642 51.1962 6.67631 51.7861 6.67631C52.3761 6.67631 52.9099 6.32642 53.145 5.78527C53.8902 4.07114 55.5781 2.96356 57.4449 2.96356C60.0296 2.96356 62.1323 5.06631 62.1323 7.65093C62.1323 8.85532 61.5564 10.0903 60.3714 11.4263C59.2557 12.6842 57.62 14.2942 52.3 17.4949C51.9829 17.6856 51.5891 17.6856 51.2722 17.4949C45.9524 14.2942 44.3166 12.6842 43.2009 11.4263C42.016 10.0903 41.4399 8.85532 41.4399 7.65093C41.4401 5.06651 43.5429 2.96356 46.1275 2.96356Z" fill="#F5E3BF"/>
@@ -59,14 +65,18 @@ const foodImages = [
     src: "/thai-chicken-cakes-with-cucumber-salad.jpg",
     alt: "Thai Hähnchen Kuchen",
   },
+  {
+    src: "/fresh-sushi-rolls-with-shrimp-and-vegetables.jpg",
+    alt: "Sushi Rollen",
+  },
 ]
 
 export function FoodCategories() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20 pb-0 bg-white">
-      <div className="container-sm mx-auto px-4" >
+    <section className="py-20 pb-0 bg-white food-categories">
+      <div className="container-sm mx-auto px-4">
         <div className="text-center mb-12 max-w-206.25 mx-auto">
           <Badge className="border-[.5px] border-navyBlue text-navyBlue rounded-full bg-transparent text-base md:text-xl px-6 py-1 font-normal mb-8">
             {t.categories.badge}
@@ -93,9 +103,19 @@ export function FoodCategories() {
           </Button>
         </div>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-20">
-          {foodImages.map((image, index) => (
-            <div key={index} className="aspect-square relative overflow-hidden">
+      <Swiper
+        cssMode={true}
+        modules={[Navigation]}
+        navigation
+        loop
+        // centeredSlides={true}
+        slidesPerView={4}
+        spaceBetween={0}
+        className="mt-10"
+      >
+        {foodImages.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div className="aspect-square relative overflow-hidden">
               <Image 
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
@@ -103,8 +123,9 @@ export function FoodCategories() {
                 className="object-cover hover:scale-110 transition-transform duration-300"
               />
             </div>
-          ))}
-        </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   )
 }
