@@ -19,7 +19,7 @@ export function HeroBanner() {
         <Button
           size="lg"
           className="bg-btnSecondary text-navyBlue hover:text-white cursor-pointer text-base md:text-xl px-8 md:px-10 py-4 md:py-6 rounded-full shadow-xl"
-        onClick={() => { window.location.href = '/menu' }}
+          onClick={() => { window.location.href = '/menu' }}
         >
           {t.hero.cta}
         </Button>
