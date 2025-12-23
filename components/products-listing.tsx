@@ -111,7 +111,7 @@ const ProductsListing = () => {
           <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
             <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M27</span>
             <h4 className="text-lg sm:text-2xl uppercase flex-1 max-sm:leading-snug">6 Lachssushi + 6 <br className="max-sm:hidden"/> Lachsmaki</h4>
-            <span className="text-btnSecondary text-2xl md:text-[30px] tracking-tighter">€ 13,90</span>
+            <span className="text-btnSecondary text-2xl md:text-[30px] tracking-tighter">€ 14,50</span>
           </div>
         </div>
         <div className="space-y-9">
