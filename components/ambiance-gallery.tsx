@@ -97,8 +97,9 @@ export function AmbianceGallery() {
           onSwiper={(swiper) => {
             swiperRef.current = swiper
           }}
-          centeredSlides
-          spaceBetween={24}
+          centeredSlides={true}
+          slidesPerView={1}
+          spaceBetween={20}
           loop
           modules={[Navigation]}
           navigation={{
@@ -106,24 +107,18 @@ export function AmbianceGallery() {
             nextEl: nextRef.current,
           }}
           breakpoints={{
-            320: {
-              slidesPerView: 1.2,
-              spaceBetween: 16,
+            500: {
+              slidesPerView: 1.4,
             },
-            640: {
-              slidesPerView: 2,
+            767: {
+              slidesPerView: 1.7,
             },
-            1024: {
-              slidesPerView: 3,
-            },
-            1280: {
-              slidesPerView: 4,
-            },
+            
           }}
         >
           {ambianceImages.map((image, index) => (
             <SwiperSlide key={index} className="ambiance-slide">
-              <div className="relative rounded-xl overflow-hidden h-[420px]">
+              <div className="relative rounded-xl overflow-hidden h-80 md:h-[420px]">
                 <img
                   src={image.src}
                   alt={image.alt}
