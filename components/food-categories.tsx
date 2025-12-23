@@ -6,7 +6,7 @@ import { useLanguage } from "@/contexts/language-context"
 import { Badge } from "./ui/badge"
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper/modules'
+import { Mousewheel } from "swiper/modules"
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -104,14 +104,21 @@ export function FoodCategories() {
         </div>
       </div>
       <Swiper
-        cssMode={true}
-        modules={[Navigation]}
-        navigation
-        loop
-        // centeredSlides={true}
-        slidesPerView={4}
-        spaceBetween={0}
-        className="mt-10"
+         modules={[Mousewheel]}
+         slidesPerView={4}
+         spaceBetween={0}
+         mousewheel={{
+           forceToAxis: true,     // 👈 sirf horizontal
+           sensitivity: 1,
+           releaseOnEdges: false // 👈 edge pe rukna nahi
+         }}
+         loop={true}              // 👈 infinite append
+         speed={600}
+         grabCursor={true}
+         watchSlidesProgress
+         observer
+         observeParents
+         className="mt-10"
       >
         {foodImages.map((image, index) => (
           <SwiperSlide key={index}>
