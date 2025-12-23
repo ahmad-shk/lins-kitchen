@@ -5,11 +5,9 @@ import Image from "next/image"
 import { useLanguage } from "@/contexts/language-context"
 import { Badge } from "./ui/badge"
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Mousewheel } from "swiper/modules"
-
-import 'swiper/css'
-import 'swiper/css/navigation'
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const categoryIcons = [
   <svg width="102" height="86" viewBox="0 0 102 86" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,6 +72,19 @@ const foodImages = [
 export function FoodCategories() {
   const { t } = useLanguage()
 
+  const settings = {
+    infinite: true,
+    speed: 5000,           // total time for one loop
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,       // no delay between scrolls
+    cssEase: "linear",      // constant speed
+    pauseOnHover: false,
+    swipe: false,
+    arrows: false,
+  }
+
   return (
     <section className="py-20 pb-0 bg-white food-categories">
       <div className="container-sm mx-auto px-4">
@@ -103,25 +114,9 @@ export function FoodCategories() {
           </Button>
         </div>
       </div>
-      <Swiper
-         modules={[Mousewheel]}
-         slidesPerView={4}
-         spaceBetween={0}
-         mousewheel={{
-           forceToAxis: true,     // 👈 sirf horizontal
-           sensitivity: 1,
-           releaseOnEdges: false // 👈 edge pe rukna nahi
-         }}
-         loop={true}              // 👈 infinite append
-         speed={600}
-         grabCursor={true}
-         watchSlidesProgress
-         observer
-         observeParents
-         className="mt-10"
-      >
+       <Slider {...settings} className="mt-10">
         {foodImages.map((image, index) => (
-          <SwiperSlide key={index}>
+          <div key={index}>
             <div className="aspect-square relative overflow-hidden">
               <Image 
                 src={image.src || "/placeholder.svg"}
@@ -130,9 +125,9 @@ export function FoodCategories() {
                 className="object-cover hover:scale-110 transition-transform duration-300"
               />
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </Slider>
     </section>
   )
 }
