@@ -1,70 +1,70 @@
-export type Language = "en" | "de"
+export type Language =  "de"
 
 export const translations = {
-  en: {
-    nav: {
-      home: "HOME",
-      menu: "MENU",
-      lunchMenu: "LUNCH MENU",
-      contact: "Contact",
-    },
-    hero: {
-      title: "A TASTE OF CHINA,",
-      titleAccent: "SERVED THE LIN'S WAY",
-      subtitle: "Good ingredients. Real flavor. Cooked as soon as you order.",
-      cta: "Explore Menu",
-    },
-    about: {
-      badge: "About Us",
-      description:
-        "Lin's Kitchen is all about fresh, simple Asian food made on the spot. We cook with good ingredients and keep the flavors honest and comforting.",
-    },
-    offers: {
-      badge: "Monthly Offer",
-      title: "SPECIAL OFFERS FOR DECEMBER",
-      items: [
-        {
-          title: "Traditional Thai Chicken Cakes",
-          description: "Finely chopped chicken infused with red curry paste and Asian herbs. Thai red golden brown.",
-          price: "5 pcs — 6.80 €",
-        },
-      ],
-    },
-    categories: {
-      badge: "Menu",
-      title: "PICK YOUR FAVORITE DISH",
-      subtitle: "Fresh Asian dishes made to order. Quick, flavorful, and prepared with simple, honest ingredients.",
-      cta: "View menu",
-      items: [{ label: "BREAKFAST" }, { label: "LUNCH" }, { label: "DINNER" }, { label: "DESSERT" }],
-    },
-    ambiance: {
-      title: "AMBIANCE & EXPERIENCE",
-      description:
-        "Lin's Kitchen is a warm, easygoing place to enjoy fresh Asian food. The space is simple, clean, and comfortable, so you can relax while your meal is cooked fresh.",
-    },
-    visit: {
-      title: "VISIT LIN'S KITCHEN",
-      subtitle: "We're easy to reach and open every day for lunch and dinner.",
-      timing: {
-        title: "TIMING",
-        weekdays: "TUE - SUN: 11:30 - 14:30 and 17:30 - 22:00",
-        holidays: "Holidays: 11:30 - 14:30 and 17:30 - 22:00",
-      },
-      location: {
-        title: "LOCATION",
-        address1: "Ketzergasse 299",
-        address2: "2380 Perchtoldsdorf",
-      },
-    },
-    footer: {
-      owner: "OWNER",
-      contact: "CONTACT",
-      email: "EMAIL",
-      follow: "FOLLOW",
-      payment: "PAYMENT ACCEPT",
-      paymentMethods: "Cash, Card welcome",
-    },
-  },
+  // en: {
+  //   nav: {
+  //     home: "HOME",
+  //     menu: "MENU",
+  //     lunchMenu: "LUNCH MENU",
+  //     contact: "Contact",
+  //   },
+  //   hero: {
+  //     title: "A TASTE OF CHINA,",
+  //     titleAccent: "SERVED THE LIN'S WAY",
+  //     subtitle: "Good ingredients. Real flavor. Cooked as soon as you order.",
+  //     cta: "Explore Menu",
+  //   },
+  //   about: {
+  //     badge: "About Us",
+  //     description:
+  //       "Lin's Kitchen is all about fresh, simple Asian food made on the spot. We cook with good ingredients and keep the flavors honest and comforting.",
+  //   },
+  //   offers: {
+  //     badge: "Monthly Offer",
+  //     title: "SPECIAL OFFERS FOR DECEMBER",
+  //     items: [
+  //       {
+  //         title: "Traditional Thai Chicken Cakes",
+  //         description: "Finely chopped chicken infused with red curry paste and Asian herbs. Thai red golden brown.",
+  //         price: "5 pcs — 6.80 €",
+  //       },
+  //     ],
+  //   },
+  //   categories: {
+  //     badge: "Menu",
+  //     title: "PICK YOUR FAVORITE DISH",
+  //     subtitle: "Fresh Asian dishes made to order. Quick, flavorful, and prepared with simple, honest ingredients.",
+  //     cta: "View menu",
+  //     items: [{ label: "BREAKFAST" }, { label: "LUNCH" }, { label: "DINNER" }, { label: "DESSERT" }],
+  //   },
+  //   ambiance: {
+  //     title: "AMBIANCE & EXPERIENCE",
+  //     description:
+  //       "Lin's Kitchen is a warm, easygoing place to enjoy fresh Asian food. The space is simple, clean, and comfortable, so you can relax while your meal is cooked fresh.",
+  //   },
+  //   visit: {
+  //     title: "VISIT LIN'S KITCHEN",
+  //     subtitle: "We're easy to reach and open every day for lunch and dinner.",
+  //     timing: {
+  //       title: "TIMING",
+  //       weekdays: "TUE - SUN: 11:30 - 14:30 and 17:30 - 22:00",
+  //       holidays: "Holidays: 11:30 - 14:30 and 17:30 - 22:00",
+  //     },
+  //     location: {
+  //       title: "LOCATION",
+  //       address1: "Ketzergasse 299",
+  //       address2: "2380 Perchtoldsdorf",
+  //     },
+  //   },
+  //   footer: {
+  //     owner: "OWNER",
+  //     contact: "CONTACT",
+  //     email: "EMAIL",
+  //     follow: "FOLLOW",
+  //     payment: "PAYMENT ACCEPT",
+  //     paymentMethods: "Cash, Card welcome",
+  //   },
+  // },
   de: {
     nav: {
       home: "HOME",
