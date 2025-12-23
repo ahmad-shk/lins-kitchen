@@ -7,57 +7,57 @@ const ProductsListing = () => {
         <div className="space-y-9">
           <div className="flex flex-wrap max-md:flex-col gap-5 lg:gap-10 items-start">
             <div className="flex-1 w-full">
-              <h3 className="font-playfair text-2xl md:text-3xl lg:text-5xl tracking-tighter mb-6" >REIS, NUDELN & HÜHNCHEN</h3>
+              <h3 className="font-playfair text-2xl md:text-3xl lg:text-5xl tracking-tighter mb-6" >REIS, NUDEL & HUHN</h3>
               <ul className="text-black text-base lg:text-lg space-y-1.5">
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M1</span>
-                  <span className="flex-1 font-normal">Eierreis mit Hühnchen A,F,C</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Eierreis mit Huhn A,F,C</span>
+                  <span className="font-medium">9,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M2</span>
-                  <span className="flex-1 font-normal">Nudeln mit Hühnchen A,F,C</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Nudeln mit Huhn A,F,C</span>
+                  <span className="font-medium">9,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M3</span>
-                  <span className="flex-1 font-normal">Knuspriges Hühnchen auf Nudeln A,F</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Huhn mit Wokgemüse A,F</span>
+                  <span className="font-medium">10,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M4</span>
-                  <span className="flex-1 font-normal">Knuspriges Hühnchen süß-sauer A,M</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Huhn mit Mandeln A,N,F</span>
+                  <span className="font-medium">11,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M5</span>
-                  <span className="flex-1 font-normal">Rotes Thai-Curry-Hühnchen*</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Huhn Szechuan A,F*</span>
+                  <span className="font-medium">10,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M6</span>
-                  <span className="flex-1 font-normal">Rotes Thai-Curry-Hühnchen*</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Huhn mit Curry L</span>
+                  <span className="font-medium">10,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M7</span>
-                  <span className="flex-1 font-normal">Rotes Thai-Curry-Hühnchen*</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Knuspriges Huhn auf Nudeln A,F</span>
+                  <span className="font-medium">10,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M8</span>
-                  <span className="flex-1 font-normal">Rotes Thai-Curry-Hühnchen*</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Knusper Huhn süss-sauer A,M</span>
+                  <span className="font-medium">10,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M9</span>
-                  <span className="flex-1 font-normal">Rotes Thai-Curry-Hühnchen*</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Rotes Thaicurry Huhn *</span>
+                  <span className="font-medium">11,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M18</span>
-                  <span className="flex-1 font-normal">Knuspriges Hühnchen in Sesam A,N</span>
-                  <span className="font-medium">€ 11,50</span>
+                  <span className="flex-1 font-normal">Knuspriges Huhn in Sesam A,N</span>
+                  <span className="font-medium">11,50</span>
                 </li>
               </ul>
             </div>
@@ -67,39 +67,40 @@ const ProductsListing = () => {
           </div>
           <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
             <span className="bg-btnSecondary rounded-md inline-block text-navyBlue text-lg sm:text-2xl tracking-tighter py-1.5 sm:py-2.5 px-1.5" >M26</span>
-            <h4 className="text-lg sm:text-2xl uppercase flex-1 max-sm:leading-snug">4 Laughing Sushi + 6 Ebi<br className="max-sm:hidden"/> Tempura Roll</h4>
+            <h4 className="text-lg sm:text-2xl uppercase flex-1 max-sm:leading-snug">4 Lachsushi + 6 Ebi<br className="max-sm:hidden"/> Tempura Roll</h4>
             <span className="text-btnSecondary text-2xl lg:text-[30px] tracking-tighter">€ 13,90</span>
           </div>
         </div>
         <div className="space-y-9">
           <div className="flex flex-wrap max-md:flex-col flex-row-reverse gap-5 md:gap-10 items-start">
             <div className="flex-1 w-full">
-              <h3 className="font-playfair text-3xl md:text-4xl lg:text-5xl tracking-tighter mb-6 uppercase" >Knusprige Ente</h3>
-              <ul className="text-black text-base lg:text-lg space-y-1.5">
+              <h3 className="font-playfair text-3xl md:text-4xl lg:text-5xl tracking-tighter mb-6" >RINDFLEISCH</h3>
+             
+               <ul className="text-black text-base lg:text-lg space-y-1.5">
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M15</span>
-                  <span className="flex-1 font-normal">Ente auf Eierreis A,F,C</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="font-normal inline-block min-w-9">M10</span>
+                  <span className="flex-1 font-normal">Rindfleisch Bulgogi A,F</span>
+                  <span className="font-medium">11,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M16</span>
-                  <span className="flex-1 font-normal">Ente mit Wokgemüse A,F,G</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="font-normal inline-block min-w-9">M11</span>
+                  <span className="flex-1 font-normal">Rindfleisch Ganbian A,F,L*</span>
+                  <span className="font-medium">11,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M17</span>
-                  <span className="flex-1 font-normal">Ente süß-sauer A,M</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="font-normal inline-block min-w-9">M12</span>
+                  <span className="flex-1 font-normal">Rind mit schwarzem Pfeffer A,F*</span>
+                  <span className="font-medium">11,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M18</span>
-                  <span className="flex-1 font-normal">Ente auf Acht-Schätze-Sauce *</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="font-normal inline-block min-w-9">M13</span>
+                  <span className="flex-1 font-normal">Rindfleisch mit Wokgemüse A,F</span>
+                  <span className="font-medium">11,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M19</span>
-                  <span className="flex-1 font-normal">Ente mit Knoblauchsauce A,F</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="font-normal inline-block min-w-9">M14</span>
+                  <span className="flex-1 font-normal">Rindfleisch mit Zwiebeln A,F</span>
+                  <span className="font-medium">11,90</span>
                 </li>
               </ul>
             </div>
@@ -116,32 +117,32 @@ const ProductsListing = () => {
         <div className="space-y-9">
           <div className="flex flex-wrap max-md:flex-col gap-5 md:gap-10 items-start">
             <div className="flex-1 w-full">
-              <h3 className="font-playfair text-3xl md:text-4xl lg:text-5xl tracking-tighter mb-6" >RINDFLEISCH</h3>
-              <ul className="text-black text-base lg:text-lg space-y-1.5">
+              <h3 className="font-playfair text-3xl md:text-4xl lg:text-5xl tracking-tighter mb-6 uppercase" >KNUSPRIGE ENTE</h3>
+               <ul className="text-black text-base lg:text-lg space-y-1.5">
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M15</span>
-                  <span className="flex-1 font-normal">Rindfleisch Bulgogi  A,F</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Ente auf Eierreis A,F,C</span>
+                  <span className="font-medium">12,20</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M16</span>
-                  <span className="flex-1 font-normal">Rindfleisch Gambian  A,F,L</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Ente mit Wokgemüse A,F,G</span>
+                  <span className="font-medium">12,20</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M17</span>
-                  <span className="flex-1 font-normal">Rindfleisch mit schwarzem Pfeffer  A,F</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Ente süss-sauer A,M</span>
+                  <span className="font-medium">11,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M18</span>
-                  <span className="flex-1 font-normal">Rindfleisch mit Wok-Gemüse  A,F</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Ente auf Acht-Schätze *</span>
+                  <span className="font-medium">12,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M19</span>
-                  <span className="flex-1 font-normal">Rindfleisch mit Zwiebeln  A,F</span>
-                  <span className="font-medium">€ 9,50</span>
+                  <span className="flex-1 font-normal">Ente mit Knoblauchsauce A,F</span>
+                  <span className="font-medium">12,20</span>
                 </li>
               </ul>
             </div>
