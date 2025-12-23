@@ -31,7 +31,7 @@ const ProductsListing = () => {
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M5</span>
-                  <span className="flex-1 font-normal">Huhn Szechuan A,F*</span>
+                  <span className="flex-1 font-normal text-red-500">Huhn Szechuan A,F*</span>
                   <span className="font-medium">10,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
@@ -51,7 +51,7 @@ const ProductsListing = () => {
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M9</span>
-                  <span className="flex-1 font-normal">Rotes Thaicurry Huhn *</span>
+                  <span className="flex-1 font-normal text-red-500">Rotes Thaicurry Huhn *</span>
                   <span className="font-medium">11,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
@@ -84,12 +84,12 @@ const ProductsListing = () => {
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M11</span>
-                  <span className="flex-1 font-normal">Rindfleisch Ganbian A,F,L*</span>
+                  <span className="flex-1 font-normal text-red-500 ">Rindfleisch Ganbian A,F,L*</span>
                   <span className="font-medium">11,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M12</span>
-                  <span className="flex-1 font-normal">Rind mit schwarzem Pfeffer A,F*</span>
+                  <span className="flex-1 font-normal text-red-500">Rind mit schwarzem Pfeffer A,F*</span>
                   <span className="font-medium">11,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
@@ -136,7 +136,7 @@ const ProductsListing = () => {
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
                   <span className="font-normal inline-block min-w-9">M18</span>
-                  <span className="flex-1 font-normal">Ente auf Acht-Schätze *</span>
+                  <span className="flex-1 font-normal text-red-500">Ente auf Acht-Schätze *</span>
                   <span className="font-medium">12,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
@@ -170,32 +170,32 @@ const ProductsListing = () => {
               <h3 className="font-playfair text-3xl md:text-4xl lg:text-5xl tracking-tighter mb-6" >VEGETARISCH, FISCH & SUSHI</h3>
               <ul className="text-black text-base lg:text-lg space-y-1.5">
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M15</span>
+                  <span className="font-normal inline-block min-w-9">M21</span>
                   <span className="flex-1 font-normal">Gebackener Seelachs süß-sauer  A,M,D</span>
                   <span className="font-medium">10,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M16</span>
+                  <span className="font-normal inline-block min-w-9">M22</span>
                   <span className="flex-1 font-normal">Gebackener Seelachs mit Wokgemüse A,F,D</span>
                   <span className="font-medium">11,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M17</span>
+                  <span className="font-normal inline-block min-w-9">M24</span>
                   <span className="flex-1 font-normal">Tofu nach Szechuan-Art  A,G</span>
                   <span className="font-medium">9,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M18</span>
+                  <span className="font-normal inline-block min-w-9">M25</span>
                   <span className="flex-1 font-normal">Gebratenes Wokgemüse</span>
                   <span className="font-medium">9,50</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M19</span>
+                  <span className="font-normal inline-block min-w-9">M30</span>
                   <span className="flex-1 font-normal">Garnelen mit Wokgemüse A,F,B</span>
                   <span className="font-medium">13,20</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M20</span>
+                  <span className="font-normal inline-block min-w-9">M31</span>
                   <span className="flex-1 font-normal">Lachs Teriyaki mit Gemüse N,F,D</span>
                   <span className="font-medium">13,20</span>
                 </li>
