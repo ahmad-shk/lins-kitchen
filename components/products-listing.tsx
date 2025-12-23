@@ -135,12 +135,12 @@ const ProductsListing = () => {
                   <span className="font-medium">11,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M18</span>
+                  <span className="font-normal inline-block min-w-9">M19</span>
                   <span className="flex-1 font-normal text-red-500">Ente auf Acht-Schätze *</span>
                   <span className="font-medium">12,90</span>
                 </li>
                 <li className="flex items-center justify-between gap-2.5">
-                  <span className="font-normal inline-block min-w-9">M19</span>
+                  <span className="font-normal inline-block min-w-9">M20</span>
                   <span className="flex-1 font-normal">Ente mit Knoblauchsauce A,F</span>
                   <span className="font-medium">12,20</span>
                 </li>
