@@ -214,7 +214,9 @@ const ProductsListing = () => {
 
         <div className="text-center space-y-5">
           <h4 className="font-playfair text-2xl md:text-3xl lg:text-4xl text-navyBlue font-semibold">ALLERGENINFORMATIONEN</h4>
-          <p className="text-black text-base md:text-xl leading-snug">A – Glutenhaltiges Getreide, B – Krebstiere, C – Ei, D – Fisch, E – Erdnüsse, F – Soja, G – Milch und Laktose, H – Nüsse, L – Sellerie, M – Senf, N – Sesam, O – Sulfite, P – Lupine, R – Weichtiere, – Scharfe</p>
+          <p className="text-black text-base md:text-xl leading-snug">A – Glutenhaltiges Getreide, B – Krebstiere, C – Ei, D – Fisch, E – Erdnüsse, F – Soja, G – Milch und Laktose, H – Nüsse, L – Sellerie, M – Senf, N – Sesam, O – Sulfite, P – Lupine, R – Weichtiere, 
+            <a className="text-red-500">* – Scharfe</a>
+            </p>
           <i className="text-black text-sm md:text-base leading-tight">If you have any further questions about ingredients and ingredients, <br className="max-sm:hidden"/> our staff will be happy to help you!</i>
         </div>
       </div>
