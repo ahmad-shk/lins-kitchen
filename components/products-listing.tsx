@@ -62,7 +62,7 @@ const ProductsListing = () => {
               </ul>
             </div>
             <div className="image relative max-w-[380px] overflow-hidden rounded-xl mx-auto">
-              <Image src="/images/image-8.jpg" width={380} height={540} alt="product"/>
+              <Image src="/images/image-33.jpeg" width={380} height={540} alt="product"/>
             </div>
           </div>
           <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
@@ -105,7 +105,7 @@ const ProductsListing = () => {
               </ul>
             </div>
             <div className="image relative max-w-[380px] overflow-hidden rounded-xl mx-auto">
-              <Image src="/images/image-14.jpg" width={380} height={540} alt="product"/>
+              <Image src="/images/image-33.jpeg" width={380} height={540} alt="product"/>
             </div>
           </div>
           <div className="bg-navyBlue rounded-2xl p-4 sm:p-5 gap-3 sm:gap-5 text-white flex items-center justify-between">
