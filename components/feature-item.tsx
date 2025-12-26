@@ -11,7 +11,7 @@ const FeatureItem = () => {
           </div>
           <div className="">
             <h3 className="font-playfair font-semibold text-3xl lg:text-3xl leading-none lg:min-h-20 mb-2.5">Mittagsmenü</h3>
-            <ul className="lg:text-xl text-base list-disc pl-6">
+            <ul className="lg:text-xl text-base -list-disc pl-6">
               <li>Jede Menü Inkludiert eine große Frühlingsrolle oder Minifrühlingsrollen oder pikante säuerliche Suppe</li>
               {/* <li>Mini-Frühlingsrollen</li>
               <li>Scharf-saure Suppe</li> */}
