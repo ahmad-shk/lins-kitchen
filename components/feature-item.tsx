@@ -20,7 +20,7 @@ const FeatureItem = () => {
           <div className="">
             <h3 className="font-playfair font-semibold text-3xl lg:text-3xl leading-none lg:min-h-20 mb-2.5">Mittagspause</h3>
             <p className="font-inter lg:text-xl text-base mb-2 leading-tight" >Dienstag – Sonntag<br/> 11:30 – 14:30 Uhr</p>
-            <p className="font-inter italic text-[15px] leading-tight">Mittagsmenüs am Wochenende sind gegen einen Aufpreis von 2,00 € erhältlich.</p>
+            <p className="font-inter italic text-[15px] leading-tight">Mittagsmenüs am und an Feiertagen sind gegen einen Aufpreis von 2,00 € erhältlich.</p>
           </div>
         </div>
       </div>
